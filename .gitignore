@@ -1,12 +1,20 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+package-lock.json
+yarn.lock
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+jspm_packages
 
 # testing
 /coverage
+lib-cov
+test-results.xml
+clover.xml
+.nyc_output
 
 # production
 /build
@@ -17,7 +25,68 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.AppleDouble
+.LSOverride
 
+
+# log and error files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
+logs
+
+# editor and that .tmp file
+.idea
+.tmp
+tmp.*
+.tmp*
+*.iws
+*.sln.iml
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# node-waf configuration
+.lock-wscript
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yeoman/bow/&c.
+bower_components/
+build/
+dist/
+.yo-rc.json
+
+# Linux ignores
+*~
+.fuse_hidden
+.directory
+.Trash-*
+*.bak
+
+# SASS
+.sass-cache/
+*.css.map
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+# Misc. detritus
+.svn/
+/.tgitconfig
+.vscode
